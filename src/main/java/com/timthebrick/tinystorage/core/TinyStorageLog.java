@@ -1,10 +1,10 @@
 package com.timthebrick.tinystorage.core;
 
-import net.minecraftforge.fml.common.FMLLog;
-
 import org.apache.logging.log4j.Level;
 
 import com.timthebrick.tinystorage.reference.References;
+
+import cpw.mods.fml.common.FMLLog;
 
 public class TinyStorageLog {
 

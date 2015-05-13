@@ -1,14 +1,16 @@
 package com.timthebrick.tinystorage.client.renderer.item;
 
+import org.lwjgl.opengl.GL11;
+
+import com.timthebrick.tinystorage.reference.References;
+
+import cpw.mods.fml.client.FMLClientHandler;
 import net.minecraft.client.model.ModelChest;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
-import net.minecraftforge.fml.client.FMLClientHandler;
-
-import org.lwjgl.opengl.GL11;
-
-import com.timthebrick.tinystorage.reference.References;
+import net.minecraftforge.client.IItemRenderer.ItemRenderType;
+import net.minecraftforge.client.IItemRenderer.ItemRendererHelper;
 
 public class ItemRendererVacuumChest implements IItemRenderer{
 	

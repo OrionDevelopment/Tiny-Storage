@@ -2,7 +2,6 @@ package com.timthebrick.tinystorage.handler;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.network.IGuiHandler;
 
 import com.timthebrick.tinystorage.client.gui.inventory.implementations.GuiDraw;
 import com.timthebrick.tinystorage.client.gui.inventory.implementations.GuiFilterChest;
@@ -29,6 +28,8 @@ import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTinyChes
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTrashChest;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityVacuumChest;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChest;
+
+import cpw.mods.fml.common.network.IGuiHandler;
 
 public class GuiHandler implements IGuiHandler {
 

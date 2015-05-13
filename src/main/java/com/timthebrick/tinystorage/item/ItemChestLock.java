@@ -1,9 +1,12 @@
 package com.timthebrick.tinystorage.item;
 
-import net.minecraft.item.Item;
-
 import com.timthebrick.tinystorage.creativetab.TabTinyStorage;
 import com.timthebrick.tinystorage.reference.References;
+
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
+import net.minecraft.util.IIcon;
+import net.minecraft.util.MathHelper;
 
 public class ItemChestLock extends Item {
 

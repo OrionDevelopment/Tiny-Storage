@@ -1,10 +1,11 @@
 package com.timthebrick.tinystorage.util;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 import com.timthebrick.tinystorage.network.PacketHandler;
 import com.timthebrick.tinystorage.network.message.MessageSoundEvent;
+
+import cpw.mods.fml.common.network.NetworkRegistry;
 
 public class CommonSoundHelper {
 

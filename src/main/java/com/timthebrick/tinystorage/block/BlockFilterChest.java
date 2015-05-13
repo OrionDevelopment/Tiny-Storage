@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -20,14 +21,14 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import com.timthebrick.tinystorage.TinyStorage;
 import com.timthebrick.tinystorage.client.gui.widgets.settings.AccessMode;
 import com.timthebrick.tinystorage.core.TinyStorageLog;
 import com.timthebrick.tinystorage.creativetab.TabTinyStorage;
 import com.timthebrick.tinystorage.reference.GUIs;
+import com.timthebrick.tinystorage.reference.Names;
 import com.timthebrick.tinystorage.reference.References;
 import com.timthebrick.tinystorage.reference.RenderIDs;
 import com.timthebrick.tinystorage.tileentity.TileEntityTinyStorage;
@@ -35,7 +36,12 @@ import com.timthebrick.tinystorage.tileentity.implementations.TileEntityFilterCh
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityFilterChestLarge;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityFilterChestMedium;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityFilterChestSmall;
+import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTinyChest;
+import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChest;
 import com.timthebrick.tinystorage.util.PlayerHelper;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockFilterChest extends BlockContainer implements ITileEntityProvider {
 

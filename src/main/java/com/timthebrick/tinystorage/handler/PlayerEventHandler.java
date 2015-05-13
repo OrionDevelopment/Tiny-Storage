@@ -1,18 +1,24 @@
 package com.timthebrick.tinystorage.handler;
 
+import com.timthebrick.tinystorage.TinyStorage;
+import com.timthebrick.tinystorage.block.BlockPiggyBank;
+import com.timthebrick.tinystorage.block.BlockWoolChest;
+import com.timthebrick.tinystorage.core.TinyStorageLog;
+import com.timthebrick.tinystorage.init.ModBlocks;
+import com.timthebrick.tinystorage.tileentity.TileEntityTinyStorage;
+import com.timthebrick.tinystorage.tileentity.implementations.TileEntityPiggyBank;
+import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChest;
+import com.timthebrick.tinystorage.util.PlayerHelper;
+
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemDye;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
-import com.timthebrick.tinystorage.TinyStorage;
-import com.timthebrick.tinystorage.block.BlockWoolChest;
-import com.timthebrick.tinystorage.core.TinyStorageLog;
-import com.timthebrick.tinystorage.tileentity.TileEntityTinyStorage;
-import com.timthebrick.tinystorage.util.PlayerHelper;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class PlayerEventHandler {
 

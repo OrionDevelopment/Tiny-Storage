@@ -1,13 +1,13 @@
 package com.timthebrick.tinystorage.network;
 
-import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
-import net.minecraftforge.fml.relauncher.Side;
-
 import com.timthebrick.tinystorage.core.TinyStorageLog;
 import com.timthebrick.tinystorage.network.message.MessageConfigButton;
 import com.timthebrick.tinystorage.network.message.MessageSoundEvent;
 import com.timthebrick.tinystorage.reference.References;
+
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import cpw.mods.fml.relauncher.Side;
 
 public class PacketHandler {
 

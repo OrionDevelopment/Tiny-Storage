@@ -3,10 +3,11 @@ package com.timthebrick.tinystorage.init;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import com.timthebrick.tinystorage.core.TinyStorageLog;
+
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class Recipes {
 

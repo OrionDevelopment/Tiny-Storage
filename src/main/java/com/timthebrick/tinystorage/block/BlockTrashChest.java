@@ -3,10 +3,24 @@ package com.timthebrick.tinystorage.block;
 import java.util.List;
 import java.util.Random;
 
+import com.timthebrick.tinystorage.TinyStorage;
+import com.timthebrick.tinystorage.core.TinyStorageLog;
+import com.timthebrick.tinystorage.creativetab.TabTinyStorage;
+import com.timthebrick.tinystorage.reference.GUIs;
+import com.timthebrick.tinystorage.reference.References;
+import com.timthebrick.tinystorage.reference.RenderIDs;
+import com.timthebrick.tinystorage.tileentity.TileEntityTinyStorage;
+import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTinyChest;
+import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTrashChest;
+import com.timthebrick.tinystorage.util.PlayerHelper;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -20,16 +34,7 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-
-import com.timthebrick.tinystorage.TinyStorage;
-import com.timthebrick.tinystorage.creativetab.TabTinyStorage;
-import com.timthebrick.tinystorage.reference.GUIs;
-import com.timthebrick.tinystorage.reference.References;
-import com.timthebrick.tinystorage.reference.RenderIDs;
-import com.timthebrick.tinystorage.tileentity.TileEntityTinyStorage;
-import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTrashChest;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockTrashChest extends BlockContainer implements ITileEntityProvider {
 

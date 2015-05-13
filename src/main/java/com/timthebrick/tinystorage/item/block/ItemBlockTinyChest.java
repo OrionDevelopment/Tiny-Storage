@@ -2,16 +2,16 @@ package com.timthebrick.tinystorage.item.block;
 
 import java.util.List;
 
+import com.timthebrick.tinystorage.block.BlockTinyChest;
+
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-
-import com.timthebrick.tinystorage.block.BlockTinyChest;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemBlockTinyChest extends ItemBlock {
 

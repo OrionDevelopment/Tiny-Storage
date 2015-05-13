@@ -1,11 +1,9 @@
 package com.timthebrick.tinystorage.item;
 
+import net.minecraft.item.Item;
+
 import com.timthebrick.tinystorage.creativetab.TabTinyStorage;
 import com.timthebrick.tinystorage.reference.References;
-
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item;
-import net.minecraft.util.IIcon;
 
 public class ItemDebugTool extends Item {
 	

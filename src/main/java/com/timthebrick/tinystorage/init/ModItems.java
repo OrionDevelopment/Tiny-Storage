@@ -3,15 +3,16 @@ package com.timthebrick.tinystorage.init;
 import java.util.ArrayList;
 import java.util.List;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.timthebrick.tinystorage.core.TinyStorageLog;
-import com.timthebrick.tinystorage.item.*;
+import com.timthebrick.tinystorage.item.ItemChestFilter;
+import com.timthebrick.tinystorage.item.ItemChestLock;
+import com.timthebrick.tinystorage.item.ItemDebugTool;
+import com.timthebrick.tinystorage.item.ItemStorageComponent;
 import com.timthebrick.tinystorage.reference.Names;
 import com.timthebrick.tinystorage.reference.References;
-
-import cpw.mods.fml.common.registry.GameRegistry;
 
 @GameRegistry.ObjectHolder(References.MOD_ID)
 public class ModItems {

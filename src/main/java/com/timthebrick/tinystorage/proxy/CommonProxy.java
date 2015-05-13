@@ -1,11 +1,10 @@
 package com.timthebrick.tinystorage.proxy;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 
 import com.timthebrick.tinystorage.handler.ConfigurationHandler;
 import com.timthebrick.tinystorage.handler.PlayerEventHandler;
-
-import cpw.mods.fml.common.FMLCommonHandler;
 
 public abstract class CommonProxy implements IProxy {
 	

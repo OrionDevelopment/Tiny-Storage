@@ -1,18 +1,15 @@
 package com.timthebrick.tinystorage.client.renderer.item;
 
-import org.lwjgl.opengl.GL11;
-
-import com.timthebrick.tinystorage.client.renderer.model.ModelDraw;
-import com.timthebrick.tinystorage.reference.References;
-
-import cpw.mods.fml.client.FMLClientHandler;
 import net.minecraft.client.model.ModelPig;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.IItemRenderer;
-import net.minecraftforge.client.IItemRenderer.ItemRenderType;
-import net.minecraftforge.client.IItemRenderer.ItemRendererHelper;
+import net.minecraftforge.fml.client.FMLClientHandler;
+
+import org.lwjgl.opengl.GL11;
+
+import com.timthebrick.tinystorage.reference.References;
 
 public class ItemRendererPiggyBank implements IItemRenderer {
 

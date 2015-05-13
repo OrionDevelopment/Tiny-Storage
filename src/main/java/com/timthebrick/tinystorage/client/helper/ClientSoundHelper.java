@@ -1,10 +1,9 @@
 package com.timthebrick.tinystorage.client.helper;
 
 import net.minecraft.client.audio.PositionedSoundRecord;
+import net.minecraftforge.fml.client.FMLClientHandler;
 
 import com.timthebrick.tinystorage.util.ResourceLocationHelper;
-
-import cpw.mods.fml.client.FMLClientHandler;
 
 public class ClientSoundHelper {
 	

@@ -1,6 +1,7 @@
 package com.timthebrick.tinystorage.init;
 
 import net.minecraft.tileentity.TileEntity;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.timthebrick.tinystorage.core.TinyStorageLog;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityDraw;
@@ -30,8 +31,6 @@ import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChes
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChestLarge;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChestMedium;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChestSmall;
-
-import cpw.mods.fml.common.registry.GameRegistry;
 
 public class TileEntities {
 

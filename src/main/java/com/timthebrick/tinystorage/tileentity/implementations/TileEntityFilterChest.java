@@ -1,15 +1,6 @@
 package com.timthebrick.tinystorage.tileentity.implementations;
 
-import com.timthebrick.tinystorage.client.gui.widgets.settings.AccessMode;
-import com.timthebrick.tinystorage.init.ModBlocks;
-import com.timthebrick.tinystorage.inventory.implementations.ContainerFilterChest;
-import com.timthebrick.tinystorage.inventory.implementations.ContainerTinyChest;
-import com.timthebrick.tinystorage.reference.Names;
-import com.timthebrick.tinystorage.tileentity.TileEntityTinyStorage;
-import com.timthebrick.tinystorage.util.StackHelper;
-
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -17,6 +8,12 @@ import net.minecraft.nbt.NBTTagList;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
+
+import com.timthebrick.tinystorage.client.gui.widgets.settings.AccessMode;
+import com.timthebrick.tinystorage.inventory.implementations.ContainerFilterChest;
+import com.timthebrick.tinystorage.reference.Names;
+import com.timthebrick.tinystorage.tileentity.TileEntityTinyStorage;
+import com.timthebrick.tinystorage.util.StackHelper;
 
 public class TileEntityFilterChest extends TileEntityTinyStorage implements ISidedInventory {
 

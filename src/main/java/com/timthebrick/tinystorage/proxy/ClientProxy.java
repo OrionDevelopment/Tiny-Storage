@@ -2,6 +2,8 @@ package com.timthebrick.tinystorage.proxy;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 import com.timthebrick.tinystorage.client.helper.ClientSoundHelper;
 import com.timthebrick.tinystorage.client.renderer.item.ItemRendererFilterChest;
@@ -32,9 +34,6 @@ import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTinyChes
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityTrashChest;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityVacuumChest;
 import com.timthebrick.tinystorage.tileentity.implementations.TileEntityWoolChest;
-
-import cpw.mods.fml.client.registry.ClientRegistry;
-import cpw.mods.fml.client.registry.RenderingRegistry;
 
 public class ClientProxy extends CommonProxy {
 

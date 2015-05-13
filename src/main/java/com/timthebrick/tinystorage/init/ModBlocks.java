@@ -6,6 +6,7 @@ import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemBlock;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.timthebrick.tinystorage.block.BlockFilterChest;
 import com.timthebrick.tinystorage.block.BlockMicroChest;
@@ -30,8 +31,6 @@ import com.timthebrick.tinystorage.item.block.ItemBlockWoolChestMedium;
 import com.timthebrick.tinystorage.item.block.ItemBlockWoolChestSmall;
 import com.timthebrick.tinystorage.reference.Names;
 import com.timthebrick.tinystorage.reference.References;
-
-import cpw.mods.fml.common.registry.GameRegistry;
 
 @GameRegistry.ObjectHolder(References.MOD_ID)
 public class ModBlocks {

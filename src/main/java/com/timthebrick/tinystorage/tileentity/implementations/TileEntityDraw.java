@@ -96,14 +96,14 @@ public class TileEntityDraw extends TileEntityTinyStorage implements ISidedInven
 	public void openInventory() {
 		++numPlayersUsing;
 		playSoundEvent = true;
-		worldObj.addBlockEvent(xCoord, yCoord, zCoord, this.worldObj.getBlock(xCoord, yCoord, zCoord), 1, numPlayersUsing);
+		worldObj.addBlockEvent(this.pos.getX(), this.pos.getY(), this.pos.getZ(), this.worldObj.getBlock(this.pos.getX(), this.pos.getY(), this.pos.getZ()), 1, numPlayersUsing);
 	}
 
 	@Override
 	public void closeInventory() {
 		--numPlayersUsing;
 		playSoundEvent = true;
-		worldObj.addBlockEvent(xCoord, yCoord, zCoord, this.worldObj.getBlock(xCoord, yCoord, zCoord), 1, numPlayersUsing);
+		worldObj.addBlockEvent(this.pos.getX(), this.pos.getY(), this.pos.getZ(), this.worldObj.getBlock(this.pos.getX(), this.pos.getY(), this.pos.getZ()), 1, numPlayersUsing);
 	}
 
 	@Override
